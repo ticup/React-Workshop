@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Reactive Workshop </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/semantic/semantic.min.css' />
+
+  </head>
+  <body>
+  <div class="ui one column page centered stackable grid">
+    <div class="row">
+      <div class="column thirteen wide ui segment">
+
+
+        <h1 class="ui dividing header">
+             <img src="images/jsconflogo.png">
+             <img src="images/reactlogo.svg">
+
+              <div class="content">
+                React + Flux Workshop
+                <div class="sub header"> Tim Coppieters </div>
+              </div>
+          </h1>
+
+        <div class="ui hidden divider"></div>
+
+        <div id="login" class="ui main content centered stackable grid">
+
+            <div class="row">
+              <div class="column ten wide">
+
+
+                <p>Before you can get started we would like to know your name!</p>
+
+
+                <div class="ui hidden divider"></div>
+
+                <form onsubmit="submitLoginForm(); return false;" class="ui login form left aligned">
+
+                    <div class="required field popup" data-content="Use your real name if you want to receive your price!">
+                      <label class="aligned">Your Name</label>
+                      <div class="two fields">
+                        <div class="field popup">
+                          <input name="firstName" type="text" placeholder="First Name">
+                        </div>
+
+                        <div class="field popup">
+                          <input name="lastName" type="text" placeholder="Last Name">
+                        </div>
+
+                      </div>
+                  </div>
+
+
+                    <div class="field popup" data-content="Add a shameless plug for your company">
+                      <label> Company</label>
+                      <input name="company" type="text" placeholder="Your Company/Affiliation (if any)">
+                    </div>
+
+                    <div class="field">
+                      <label>Experience with JavaScript</label>
+                        <select name="experience" class="ui search dropdown">
+                          <option value="">Number of Years</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="Way too much...">Way too much...</option>
+                        </select>
+                    </div>
+
+
+
+
+
+
+
+                  <div class="ui hidden divider"></div>
+
+
+                  <button class="ui primary submit animated fade button">
+                    <div class="visible content">Let's Start!</div>
+                    <div class="hidden content">
+                      You're awesome
+                    </div>
+                  </button>
+
+                  <p class="grey">Disclaimer: this data will be visible to the audience.</p>
+
+                  <div class="ui error message">
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+        <div id="app">
+
+
+          <div class="user info right aligned">
+            <a class="ui label profile name "></a>
+          </div>
+
+          <div class="ui segment left aligned">
+            <a class="ui ribbon label">Top Contributors</a>
+
+              <p>Score points by contributing your answer to the "tasks" section.</p>
+          </div>
+
+          <div class="ui hidden divider"></div>
+
+
+          <div class="ui segment left aligned">
+            <a class="ui ribbon label">Questions</a>
+
+              <p>Ask your question here if you're really really really shy, but we prefer you just ask us!</p>
+          </div>
+
+          <div class="ui hidden divider"></div>
+
+
+          <div class="ui segment left aligned">
+            <a class="ui ribbon label">Tasks</a>
+
+            <p>Let's learn about flux by making this page.</p>
+
+            <div class="ui styled accordion">
+
+              <div class="active title">
+                <i class="dropdown icon"></i>
+                Task 1
+              </div>
+
+              <div class="active content">
+                <p></p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/socket.io.js"></script>
+  <script src="javascripts/semantic.min.js"></script>
+  <script src="javascripts/ui.js"></script>
+  <script src="javascripts/index.js"></script>
+
+  </body>
+</html>
